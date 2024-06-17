@@ -8,10 +8,16 @@ export default component$(() => {
   return (
     <footer>
       <div class="container">
-        <a href="https://www.builder.io/" target="_blank" class={styles.anchor}>
-          <span>Made with ♡ by Builder.io</span>
+        <a href="https://github.com/hackpres" target="_blank" class={styles.anchor}>
+          <span>Built by hackpres</span>
           <span class={styles.spacer}>|</span>
-          <span>{serverTime.value.date}</span>
+          <span>{new Date().toLocaleString("en-GB", {
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+            hour: "numeric",
+            minute: "2-digit"
+          })}</span>
         </a>
       </div>
     </footer>

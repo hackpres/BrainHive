@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { QwikLogo } from "../icons/qwik";
+import BTCfavicon from "../icons/BTC Favicon.png"
 import styles from "./header.module.css";
 
 export default component$(() => {
@@ -7,33 +7,25 @@ export default component$(() => {
     <header class={styles.header}>
       <div class={["container", styles.wrapper]}>
         <div class={styles.logo}>
-          <a href="/" title="qwik">
-            <QwikLogo height={50} width={143} />
+          <a href="/" title="BTC_Hive">
+            <img src={BTCfavicon} width="100" height="100"/>
           </a>
         </div>
         <ul>
           <li>
             <a
-              href="https://qwik.dev/docs/components/overview/"
+              // href="https://qwik.dev/docs/components/overview/"
               target="_blank"
             >
-              Docs
+              New Project
             </a>
           </li>
           <li>
             <a
-              href="https://qwik.dev/examples/introduction/hello-world/"
+              // href="https://qwik.dev/examples/introduction/hello-world/"
               target="_blank"
             >
-              Examples
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://qwik.dev/tutorial/welcome/overview/"
-              target="_blank"
-            >
-              Tutorials
+              New Action
             </a>
           </li>
         </ul>
