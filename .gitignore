@@ -35,7 +35,10 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.env
+.env.local
 
 # Yarn
 .yarn/*
 !.yarn/releases
+
